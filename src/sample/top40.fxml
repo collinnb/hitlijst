@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_scherm3">
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+            <ChoiceBox fx:id="choose" prefWidth="150.0" />
+            <Label text="jaar" />
+            <TextField fx:id="jaar" promptText="jaar" text="1965" />
+            <Label text="week" />
+            <TextField fx:id="week" promptText="week" text="1" />
+                <Button mnemonicParsing="false" onAction="#knop" text="zoek">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="table" onMouseClicked="#click" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+            <TableColumn fx:id="positie" prefWidth="61.0" text="positie" />
+                <TableColumn fx:id="artiest" minWidth="0.0" prefWidth="211.0" text="artiest" />
+                <TableColumn fx:id="singel" prefWidth="327.0" text="singel" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

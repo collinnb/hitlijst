@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_popup3">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="closebtn" mnemonicParsing="false" onAction="#close" text="Sluit" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#464444" height="41.76" radius="17.415" width="29.9" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="610.0">
+               <children>
+                  <Label fx:id="artiest" alignment="CENTER" prefHeight="17.0" prefWidth="196.0" text="Label" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="titel" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="weeken in top 40" />
+                  <Label fx:id="weeken" prefHeight="17.0" prefWidth="168.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="hoogste berijk" />
+                  <Label fx:id="hoogste" prefHeight="17.0" prefWidth="188.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="andere nummbers van deze artiest" />
+               </children>
+            </HBox>
+            <ListView fx:id="lijst" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
